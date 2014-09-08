@@ -53,7 +53,7 @@ def fizzbuzz
 
 end
 # Uncomment each of these to test your functions
-#puts reverse([3,6,'dog']).inspect
-#puts histogram('The Quick brown fox').inspect
-#puts sum_only_numbers [4, 'foo', [ ], 27, :rain, 3.14]
+puts reverse([3,6,'dog']).inspect
+puts histogram('The Quick brown fox').inspect
+puts sum_only_numbers [4, 'foo', [ ], 27, :rain, 3.14]
 puts fizzbuzz.join("\n")
