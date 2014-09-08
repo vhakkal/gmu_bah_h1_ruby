@@ -33,11 +33,27 @@ end
 # Otherwise, the element is simply the value of i
 # For example [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', ..., 14, 'FizzBuzz', ...]
 def fizzbuzz
-  # write your code here
+	data = []
+
+	array_list = (1..100).to_a
+	array_list.each do |number| 
+		case
+		when number % 3 == 0 && number % 5 == 0
+			value = 'FizzBuzz'
+		when number % 3 == 0
+			value = 'Fizz'
+		when number % 5 == 0
+			value = 'Buzz'
+		else 
+			value = number
+		end
+		data[number] = value
+	end
+	return data
+
 end
 # Uncomment each of these to test your functions
-puts reverse([3,6,'dog']).inspect
-puts histogram('The Quick brown fox').inspect
-puts sum_only_numbers [4, 'foo', [ ], 27, :rain, 3.14]
-# puts fizzbuzz.join("\n")
-
+#puts reverse([3,6,'dog']).inspect
+#puts histogram('The Quick brown fox').inspect
+#puts sum_only_numbers [4, 'foo', [ ], 27, :rain, 3.14]
+puts fizzbuzz.join("\n")
