@@ -7,7 +7,8 @@ end
 # Letters should be lowercase before counting
 # For example, histogram('Hello') returns {'h'=>1,'e'=>1,'l'=>2,'o'=>1}
 def histogram(a_string)
-	words = a_string.split ""
+	#words = a_string.downcase
+	words = a_string.gsub(/\s+/, "").downcase.split ""
  	frequency = Hash.new(0)
  	words.each { |word| frequency[word] += 1 }
  	return frequency
