@@ -20,9 +20,9 @@ class Bookmark
 		return @last_visited
 	end
 end
-bookmark = Bookmark.new("www.cnn.com", "CNN News")
-bookmark.visit!
-puts bookmark.last_visited
+#bookmark = Bookmark.new("www.cnn.com", "CNN News")
+#bookmark.visit!
+#puts bookmark.last_visited
 
 
 
